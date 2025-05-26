@@ -40,4 +40,4 @@ describeBy(distance, group = carrier)
 
 # Two levels of aggregation
 aggregate(distance, by = list(carrier, month), FUN = mean, na.rn =TRUE)
-aggregate(distance, by = list(carrier, month), FUN = sd, na.rn = TRUE)
+aggregate(distance, by = list(carrier, month), FUN = sd, na.rm = TRUE)
